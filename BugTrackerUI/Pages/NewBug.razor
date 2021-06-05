@@ -7,7 +7,10 @@
     <InputText @bind-Value="@AddBug.Description" placeholder="Ënter Description"/>
     <InputNumber @bind-Value="@AddBug.Priority" placeholder="Ënter Piority"/>
     <button type="submit">Add Bug</button>
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
 </EditForm>
+
 
 @code {
     [Inject]
